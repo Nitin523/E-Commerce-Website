@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>RedStore | Ecommerce Website Design</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +19,7 @@
                     <img src="images/logo.png" width="125px">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">HOME</a></li>
                         <li><a href="">PRODUCTS</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -27,6 +28,7 @@
                     </ul>
                 </nav>
                 <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
     
             </div>
             
@@ -309,10 +311,90 @@
                     <img src="images/user-3.png">
                     <h3>Jennifer lawerence</h3>
                 </div>
-                
             </div>
         </div>
     </div>
+
+    <!-------------------- brand ----------------->
+
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------footer----------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png">
+                        <p>We are here to increase the productivity <br>of the world and health.</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Useful Links</h3>
+                       <ul>
+                           <li>Coupons</li>
+                           <li>Blog Post</li>
+                           <li>Return Policy</li>
+                           <li>Join Affiliate</li>
+                       </ul>
+                    </div>
+                    <div class="footer-col-5">
+                        <h3>Follow us</h3>
+                       <ul>
+                           <li>facebook</li>
+                           <li>Instagram</li>
+                           <li>Whatsapp</li>
+                           <li>YouTube</li>
+                       </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright-2021 @ Nitin Gangwar 💖</p>
+            </div>
+        </div>
+
+        <!------------------------------------------js for toggle menu------------->
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight="0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px"){
+
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
 
     </body>
 </html>
