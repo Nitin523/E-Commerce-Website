@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>All Products - RedStore | Ecommerce Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,100;1,800&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    
+            </div>
+            
+           
+        </div>
+        
+    <!--------------------------cart details ------------------>
+
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>subtotal</th>
+                </tr>
+
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>Red Printed Tshirt</p>
+                            <small>Price: Rs750</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs 750</td>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Black addidas shoes</p>
+                            <small>Price: Rs900</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs 900</td>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Grey Printed trouser</p>
+                            <small>Price: Rs850</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs 850</td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>Rs3000</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>Rs300</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>Rs3300</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+   
+
+        <!----------------------footer----------------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png">
+                        <p>We are here to increase the productivity <br>of the world and health.</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Useful Links</h3>
+                       <ul>
+                           <li>Coupons</li>
+                           <li>Blog Post</li>
+                           <li>Return Policy</li>
+                           <li>Join Affiliate</li>
+                       </ul>
+                    </div>
+                    <div class="footer-col-5">
+                        <h3>Follow us</h3>
+                       <ul>
+                           <li>facebook</li>
+                           <li>Instagram</li>
+                           <li>Whatsapp</li>
+                           <li>YouTube</li>
+                       </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright-2021 @ Nitin Gangwar 💖</p>
+            </div>
+        </div>
+
+        <!------------------------------------------js for toggle menu------------->
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight="0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px"){
+
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
+
+   
+
+
+    </body>
+</html>
