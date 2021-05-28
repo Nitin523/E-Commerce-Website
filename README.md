@@ -1,2 +1,2 @@
 # E-Commerce-Website
-Front end website
+Front end website of shopping mart
